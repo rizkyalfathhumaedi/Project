@@ -1,0 +1,1027 @@
+<!DOCTYPE html>
+<html lang="id" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Astrove Technology — Build Beyond Digital</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Instrument+Serif:ital@0;1&family=Cabinet+Grotesk:wght@300;400;500;700;800;900&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- LOADER -->
+    <div id="loader">
+        <div class="loader-center">
+            <div class="loader-wordmark">ASTROVE</div>
+            <div class="loader-progress">
+                <div class="loader-bar" id="loaderBar"></div>
+            </div>
+            <div class="loader-pct" id="loaderPct">0%</div>
+        </div>
+    </div>
+
+    <!-- CUSTOM CURSOR -->
+    <div id="cursor"></div>
+    <div id="cursor-dot"></div>
+
+    <!-- THEME TOGGLE -->
+    <!-- <button id="themeToggle" aria-label="Toggle theme">
+  <span class="theme-icon-dark">☽</span>
+  <span class="theme-icon-light">◎</span>
+</button> -->
+
+    <!-- NAVBAR -->
+<nav id="navbar">
+    <div class="nav-inner">
+
+        <a href="#home" class="nav-logo">
+            <img src="assets/Logo.png" alt="Logo Astrove Technology" class="logo-img">
+            Astrove Technology
+        </a>
+
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#services" class="nl">Layanan</a></li>
+            <li><a href="#portfolio" class="nl">Portofolio</a></li>
+            <li><a href="#pricing" class="nl">Harga</a></li>
+            <li><a href="#about" class="nl">Tentang</a></li>
+            <li><a href="#contact" class="nl">Kontak</a></li>
+        </ul>
+
+        <!-- <a href="#contact" class="nav-cta">
+            Konsultasi Gratis <span>↗</span>
+        </a> -->
+
+        <button class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+        </button>
+
+    </div>
+</nav>
+
+    <!-- ═══════════ HERO ═══════════ -->
+    <section id="home" class="hero">
+        <!-- Spline 3D Object -->
+        <div class="spline-wrap">
+            <spline-viewer loading-anim-type="none" url="https://prod.spline.design/cc8gJRij0KwpQvnS/scene.splinecode">
+            </spline-viewer>
+        </div>
+
+        <!-- Abstract BG shapes -->
+        <div class="hero-noise"></div>
+        <div class="abstract-ring r1"></div>
+        <div class="abstract-ring r2"></div>
+
+        <div class="hero-content">
+            <div class="hero-eyebrow">
+                <span class="eyebrow-line"></span>
+                <span>Astrove Technology · Sejak 2026</span>
+                <span class="eyebrow-line"></span>
+            </div>
+            <h1 class="hero-title">
+                <span class="ht-line" data-text="BUILD">BUILD</span>
+                <span class="ht-line italic-serif" data-text="Beyond">Beyond</span>
+                <span class="ht-line" data-text="DIGITAL">DIGITAL</span>
+            </h1>
+            <p class="hero-desc">
+                Kami menghadirkan website berkualitas tinggi yang dirancang untuk mengubah pengunjung menjadi pelanggan
+                cepat, tepat, dan penuh kreativitas.
+            </p>
+            <p class="hero-subdesc">
+                cepat, tepat, dan penuh kreativitas.
+            </p>
+            <div class="hero-actions">
+                <a href="#contact" class="btn-pill">Konsultasi Gratis ↗</a>
+                <a href="#portfolio" class="btn-text-link">Lihat Portofolio <span class="tl-arrow">→</span></a>
+            </div>
+        </div>
+
+        <!-- Floating marquee -->
+        <div class="hero-marquee-wrap">
+            <div class="hero-marquee">
+                <span>Landing Page</span><span class="mx-dot">✦</span>
+                <span>Company Profile</span><span class="mx-dot">✦</span>
+                <span>UI/UX Design</span><span class="mx-dot">✦</span>
+                <span>Web Development</span><span class="mx-dot">✦</span>
+                <span>Redesign</span><span class="mx-dot">✦</span>
+                <span>Landing Page</span><span class="mx-dot">✦</span>
+                <span>Company Profile</span><span class="mx-dot">✦</span>
+                <span>UI/UX Design</span><span class="mx-dot">✦</span>
+                <span>Web Development</span><span class="mx-dot">✦</span>
+                <span>Redesign</span><span class="mx-dot">✦</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════ STATS ═══════════ -->
+    <section class="stats-band">
+        <div class="sb-inner">
+
+            <div class="sb-item reveal">
+                <!-- <i class="fas fa-folder-open"></i> -->
+                <div class="sb-num" data-count="5">0</div>
+                <div class="sb-suffix">+</div>
+                <div class="sb-label">Proyek Selesai</div>
+            </div>
+
+            <div class="sb-divider"></div>
+
+            <div class="sb-item reveal">
+                <!-- <i class="fas fa-users"></i> -->
+                <div class="sb-num" data-count="5">0</div>
+                <div class="sb-suffix">+</div>
+                <div class="sb-label">Klien Puas</div>
+            </div>
+
+            <div class="sb-divider"></div>
+
+            <div class="sb-item reveal">
+                <!-- <i class="fas fa-calendar-alt"></i> -->
+                <div class="sb-num" data-count="1">0</div>
+                <div class="sb-suffix">+</div>
+                <div class="sb-label">Tahun Pengalaman</div>
+            </div>
+
+            <div class="sb-divider"></div>
+
+            <div class="sb-item reveal">
+                <!-- <i class="fas fa-bolt"></i> -->
+                <div class="sb-num" data-count="100">0</div>
+                <div class="sb-suffix">%</div>
+                <div class="sb-label">Kepuasan Klien</div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ═══════════ SERVICES ═══════════ -->
+    <section id="services" class="services-section">
+        <div class="container">
+            <div class="section-label reveal">Layanan Kami</div>
+
+            <div class="services-head">
+                <h2 class="section-title reveal">Apa yang <em>Kami Kerjakan</em></h2>
+                <p class="section-desc reveal">
+                    Solusi digital yang dirancang untuk membantu bisnis modern berkembang dan tampil lebih unggul.
+                </p>
+            </div>
+
+            <div class="services-list">
+
+                <div class="svc-row reveal" data-delay="0">
+                    <div class="svc-num">01</div>
+                    <div class="svc-info">
+                        <h3>Landing Page</h3>
+                        <p>
+                            Landing page modern dan responsif yang dirancang untuk menarik perhatian pengunjung dan
+                            meningkatkan konversi.
+                        </p>
+                    </div>
+                    <div class="svc-tags">
+                        <span>HTML</span><span>CSS</span><span>JavaScript</span>
+                    </div>
+                    <div class="svc-arrow">↗</div>
+                </div>
+
+                <div class="svc-row reveal" data-delay="60">
+                    <div class="svc-num">02</div>
+                    <div class="svc-info">
+                        <h3>Website Company Profile</h3>
+                        <p>
+                            Website profesional untuk memperkenalkan perusahaan, layanan, dan identitas bisnis Anda
+                            secara terpercaya.
+                        </p>
+                    </div>
+                    <div class="svc-tags">
+                        <span>Laravel</span><span>Bootstrap</span>
+                    </div>
+                    <div class="svc-arrow">↗</div>
+                </div>
+
+                <div class="svc-row reveal" data-delay="120">
+                    <div class="svc-num">03</div>
+                    <div class="svc-info">
+                        <h3>Desain UI/UX</h3>
+                        <p>
+                            Perancangan tampilan dan pengalaman pengguna yang nyaman, modern, dan mudah digunakan.
+                        </p>
+                    </div>
+                    <div class="svc-tags">
+                        <span>Figma</span><span>Wireframe</span>
+                    </div>
+                    <div class="svc-arrow">↗</div>
+                </div>
+
+                <div class="svc-row reveal" data-delay="180">
+                    <div class="svc-num">04</div>
+                    <div class="svc-info">
+                        <h3>Pengembangan Website</h3>
+                        <p>
+                            Pembuatan website dinamis, sistem informasi, dan aplikasi web yang cepat, aman, dan mudah
+                            dikelola.
+                        </p>
+                    </div>
+                    <div class="svc-tags">
+                        <span>Laravel</span><span>Django</span><span>PHP</span>
+                    </div>
+                    <div class="svc-arrow">↗</div>
+                </div>
+
+                <div class="svc-row reveal" data-delay="240">
+                    <div class="svc-num">05</div>
+                    <div class="svc-info">
+                        <h3>Redesain Website</h3>
+                        <p>
+                            Memperbarui tampilan website lama menjadi lebih modern, responsif, dan sesuai kebutuhan
+                            bisnis saat ini.
+                        </p>
+                    </div>
+                    <div class="svc-tags">
+                        <span>Tailwind</span><span>Bootstrap</span><span>UI/UX</span>
+                    </div>
+                    <div class="svc-arrow">↗</div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════ ABOUT ═══════════ -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="about-layout">
+
+                <div class="about-left">
+                    <div class="section-label reveal">Tentang Kami</div>
+
+                    <h2 class="section-title reveal">
+                        Kami Membangun <br />
+                        <em>Solusi Digital</em><br />
+                        untuk Bisnis Anda
+                    </h2>
+
+                    <div class="about-blob-wrap reveal">
+                        <div class="about-blob">
+                            <div class="blob-inner">
+                                <div class="blob-3d-placeholder">
+                                    <div class="b3d-ring b3d-r1 "></div>
+                                    <div class="b3d-ring b3d-r2"></div>
+                                    <div class="b3d-ring b3d-r3"></div>
+                                    <div class="b3d-core"></div>
+                                    <img src="assets/Logo_B.png" alt="Astrove Technology Logo" class="about-logo">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="about-badge">Sejak 2026</div>
+                    </div>
+                </div>
+
+                <div class="about-right">
+
+                    <p class="about-big-text reveal">
+                        Astrove Technology adalah studio pengembangan website yang berfokus pada pembuatan
+                        <em>website modern, cepat, dan profesional.</em>
+                    </p>
+
+                    <p class="about-body reveal">
+                        Kami membantu bisnis, organisasi, dan personal brand membangun kehadiran digital yang kuat
+                        melalui desain yang menarik dan pengembangan website yang berkualitas. Setiap proyek kami
+                        kerjakan dengan fokus pada performa, kemudahan penggunaan, dan tampilan yang responsif.
+                    </p>
+
+                    <div class="about-pills reveal">
+                        <span>Website</span>
+                        <span>UI/UX Design</span>
+                        <span>Laravel</span>
+                        <span>Django</span>
+                        <span>Bootstrap</span>
+                        <span>Tailwind CSS</span>
+                    </div>
+
+                    <div class="about-grid reveal">
+
+                        <div class="ag-item">
+                            <div class="ag-icon">
+                                <i class="fas fa-code"></i>
+                            </div>
+                            <span>Kode Berkualitas</span>
+                        </div>
+
+                        <div class="ag-item">
+                            <div class="ag-icon">
+                                <i class="fas fa-palette"></i>
+                            </div>
+                            <span>Desain Modern</span>
+                        </div>
+
+                        <div class="ag-item">
+                            <div class="ag-icon">
+                                <i class="fas fa-layer-group"></i>
+                            </div>
+                            <span>Struktur Rapi</span>
+                        </div>
+
+                        <div class="ag-item">
+                            <div class="ag-icon">
+                                <i class="fas fa-mobile-screen"></i>
+                            </div>
+                            <span>Responsif</span>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════ PORTFOLIO ═══════════ -->
+    <section id="portfolio" class="portfolio-section">
+        <div class="container">
+            <div class="section-label reveal">Portofolio Pilihan</div>
+
+            <div class="portfolio-head reveal">
+                <h2 class="section-title">Portofolio <em>Kami</em></h2>
+
+                <div class="portfolio-filters">
+                    <button class="pf-btn active" data-filter="all">Semua</button>
+                    <button class="pf-btn" data-filter="landing">Landing Page</button>
+                    <button class="pf-btn" data-filter="company">Website Perusahaan</button>
+                    <button class="pf-btn" data-filter="system">Sistem Informasi</button>
+                </div>
+            </div>
+
+            <div class="portfolio-masonry">
+
+                <div class="pm-card tall reveal" data-cat="landing" data-delay="0">
+                    <div class="pmc-visual pv1">
+                        <div class="pv-inner">
+                            <div class="pv-bar"></div>
+                            <div class="pv-lines">
+                                <div class="pvl w65"></div>
+                                <div class="pvl w45"></div>
+                            </div>
+                            <div class="pv-cards">
+                                <div class="pvc"></div>
+                                <div class="pvc"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pmc-overlay">
+                        <span class="pmc-cat">Landing Page</span>
+                        <h3>Website UMKM Kuliner</h3>
+                        <p>HTML · CSS · JavaScript · Bootstrap</p>
+                        <button class="pmc-btn" data-project="0">Lihat Detail →</button>
+                    </div>
+
+                </div>
+
+                <div class="pm-card reveal" data-cat="company" data-delay="100">
+                    <div class="pmc-visual pv2">
+                        <div class="pv-inner">
+                            <div class="pv-bar"></div>
+                            <div class="pv-lines">
+                                <div class="pvl w70"></div>
+                                <div class="pvl w50"></div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="pmc-overlay">
+                        <span class="pmc-cat">Website Perusahaan</span>
+                        <h3>Astrove Technology</h3>
+                        <p>Laravel · Bootstrap · MySQL</p>
+                        <button class="pmc-btn" data-project="1">Lihat Detail →</button>
+                    </div>
+                </div>
+
+                <div class="pm-card reveal" data-cat="system" data-delay="150">
+                    <div class="pmc-visual pv3">
+                        <div class="pv-inner">
+                            <div class="pv-bar"></div>
+                            <div class="pv-lines">
+                                <div class="pvl w55"></div>
+                                <div class="pvl w35"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pmc-overlay">
+                        <span class="pmc-cat">Sistem Informasi</span>
+                        <h3>Sistem Kasir Coffee Shop</h3>
+                        <p>Laravel · PHP · Bootstrap · MySQL</p>
+                        <button class="pmc-btn" data-project="2">Lihat Detail →</button>
+                    </div>
+                </div>
+
+                <div class="pm-card wide reveal" data-cat="landing" data-delay="200">
+                    <div class="pmc-visual pv4">
+                        <div class="pv-inner">
+                            <div class="pv-bar"></div>
+                            <div class="pv-lines">
+                                <div class="pvl w60"></div>
+                                <div class="pvl w40"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pmc-overlay">
+                        <span class="pmc-cat">Landing Page</span>
+                        <h3>Landing Page Jasa Renovasi</h3>
+                        <p>HTML · CSS · JavaScript · Tailwind CSS</p>
+                        <button class="pmc-btn" data-project="3">Lihat Detail →</button>
+                    </div>
+                </div>
+
+                <div class="pm-card reveal" data-cat="company" data-delay="250">
+                    <div class="pmc-visual pv5">
+                        <div class="pv-inner">
+                            <div class="pv-bar"></div>
+                            <div class="pv-lines">
+                                <div class="pvl w75"></div>
+                                <div class="pvl w55"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pmc-overlay">
+                        <span class="pmc-cat">Website Perusahaan</span>
+                        <h3>Website Profil Kontraktor</h3>
+                        <p>Laravel · PHP · Bootstrap</p>
+                        <button class="pmc-btn" data-project="4">Lihat Detail →</button>
+                    </div>
+                </div>
+
+                <div class="pm-card reveal" data-cat="system" data-delay="300">
+                    <div class="pmc-visual pv6">
+                        <div class="pv-inner">
+                            <div class="pv-bar"></div>
+                            <div class="pv-lines">
+                                <div class="pvl w60"></div>
+                                <div class="pvl w40"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pmc-overlay">
+                        <span class="pmc-cat">Sistem Informasi</span>
+                        <h3>Sistem Reservasi Barbershop</h3>
+                        <p>Django · Python · HTML · CSS</p>
+                        <button class="pmc-btn" data-project="5">Lihat Detail →</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal Portfolio -->
+    <div class="modal-overlay" id="modal">
+        <div class="modal-box">
+            <button class="modal-close" id="modalClose">✕</button>
+            <div id="modalContent"></div>
+        </div>
+    </div>
+
+    <!-- ═══════════ PRICING ═══════════ -->
+
+    <section id="pricing" class="pricing-section">
+        <div class="container">
+
+            <div class="section-label reveal">Paket Harga</div>
+
+            <h2 class="section-title reveal">
+                Mulai Website Impian Anda dengan <em>Harga Terjangkau</em>
+            </h2>
+
+            <p class="section-desc reveal">
+                Cocok untuk UMKM, bisnis lokal, coffee shop, kontraktor, jasa, dan berbagai usaha yang ingin tampil
+                lebih profesional di internet.
+            </p>
+
+            <div class="pricing-trio">
+
+                <!-- STARTER -->
+                <div class="pt-card reveal" data-delay="0">
+                    <div class="ptc-top">
+                        <h3>Basic</h3>
+
+                        <div class="ptc-price">
+                            <span class="old-price">Rp 2.500.000</span>
+                            <strong>Rp 1.500.000</strong>
+                        </div>
+
+                        <p>Solusi hemat untuk memulai kehadiran bisnis Anda secara online.</p>
+                    </div>
+
+                    <ul>
+                        <li class="on">Landing Page Profesional</li>
+                        <li class="on">Desain Responsif Mobile & Desktop</li>
+                        <li class="on">Informasi Produk / Layanan</li>
+                        <li class="on">Tombol WhatsApp Langsung</li>
+                        <li class="on">Galeri Foto</li>
+                        <li class="on">2x Revisi</li>
+                        <li class="on">Pengerjaan ±7 Hari</li>
+                        <li class="off">Fitur Sistem Informasi</li>
+                    </ul>
+
+                    <a href="#contact" class="ptc-btn">
+                        Pesan Sekarang ↗
+                    </a>
+                </div>
+
+                <!-- BUSINESS -->
+                <div class="pt-card featured reveal" data-delay="100">
+
+                    <div class="ptc-badge">
+                        PALING DIMINATI
+                    </div>
+
+                    <div class="ptc-top">
+                        <h3>Business</h3>
+
+                        <div class="ptc-price">
+                            <span class="old-price">Rp 6.000.000</span>
+                            <strong>Rp 4.000.000</strong>
+                        </div>
+
+                        <p>Untuk bisnis yang ingin tampil lebih profesional dan terpercaya.</p>
+                    </div>
+
+                    <ul>
+                        <li class="on">Website Hingga 5 Halaman</li>
+                        <li class="on">Desain Premium & Responsif</li>
+                        <li class="on">Profil Perusahaan Lengkap</li>
+                        <li class="on">Galeri Portofolio</li>
+                        <li class="on">Formulir Kontak</li>
+                        <li class="on">Integrasi WhatsApp</li>
+                        <li class="on">5x Revisi</li>
+                        <li class="on">Pengerjaan ±14 Hari</li>
+                    </ul>
+
+                    <a href="#contact" class="ptc-btn filled">
+                        Pesan Sekarang ↗
+                    </a>
+                </div>
+
+                <!-- PREMIUM -->
+                <div class="pt-card reveal" data-delay="200">
+                    <div class="ptc-top">
+                        <h3>Custom System</h3>
+
+                        <div class="ptc-price">
+                            <span class="old-price">Rp 12.000.000</span>
+                            <strong>Mulai Rp 9.000.000</strong>
+                        </div>
+
+                        <p>Cocok untuk bisnis yang membutuhkan sistem khusus sesuai kebutuhan.</p>
+                    </div>
+
+                    <ul>
+                        <li class="on">Sistem Kasir (POS)</li>
+                        <li class="on">Sistem Reservasi</li>
+                        <li class="on">Dashboard Admin</li>
+                        <li class="on">Manajemen Data Pelanggan</li>
+                        <li class="on">Laporan & Statistik</li>
+                        <li class="on">Fitur Custom Sesuai Kebutuhan</li>
+                        <li class="on">Pendampingan Implementasi</li>
+                        <li class="on">Prioritas Support</li>
+                    </ul>
+
+                    <a href="#contact" class="ptc-btn">
+                        Pesan Sekarang ↗
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ═══════════ TESTIMONIALS ═══════════ -->
+    <section class="testi-section">
+        <div class="container">
+            <div class="section-label reveal">Testimoni</div>
+            <h2 class="section-title reveal">Apa Kata <em>Klien Kami</em></h2>
+            <div class="testi-scroll-wrap reveal">
+                <div class="testi-scroll" id="testiScroll">
+                    <div class="tc">
+                        <div class="tc-stars">★★★★★</div>
+                        <p>
+                            "Website untuk usaha kuliner kami selesai tepat waktu dan tampilannya jauh lebih
+                            profesional. Pelanggan sekarang lebih mudah melihat menu dan menghubungi kami melalui
+                            WhatsApp."
+                        </p>
+                        <div class="tc-author">
+                            <div class="tc-av" style="background:hsl(180,60%,25%)">R</div>
+                            <div>
+                                <strong>Rizky Pratama</strong>
+                                <span>Pemilik UMKM Kuliner</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tc">
+                        <div class="tc-stars">★★★★★</div>
+                        <p>
+                            "Tim Astrove sangat komunikatif selama proses pengerjaan. Website company profile yang
+                            dibuat membantu bisnis kami terlihat lebih profesional di mata calon klien."
+                        </p>
+                        <div class="tc-author">
+                            <div class="tc-av" style="background:hsl(220,60%,25%)">S</div>
+                            <div>
+                                <strong>Siti Rahma</strong>
+                                <span>Direktur CV Maju Bersama</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tc">
+                        <div class="tc-stars">★★★★★</div>
+                        <p>
+                            "Sistem kasir coffee shop yang dibuat sangat membantu operasional harian. Proses transaksi
+                            jadi lebih cepat dan laporan penjualan bisa dipantau dengan mudah."
+                        </p>
+                        <div class="tc-author">
+                            <div class="tc-av" style="background:hsl(30,60%,25%)">A</div>
+                            <div>
+                                <strong>Andi Saputra</strong>
+                                <span>Pemilik Coffee Shop</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tc">
+                        <div class="tc-stars">★★★★★</div>
+                        <p>
+                            "Kami sangat puas dengan hasil landing page yang dibuat. Desainnya modern, informatif, dan
+                            berhasil meningkatkan jumlah calon pelanggan yang menghubungi kami."
+                        </p>
+                        <div class="tc-author">
+                            <div class="tc-av" style="background:hsl(270,60%,25%)">D</div>
+                            <div>
+                                <strong>Dewi Lestari</strong>
+                                <span>Pemilik Jasa Renovasi</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tc">
+                        <div class="tc-stars">★★★★★</div>
+                        <p>
+                            "Mulai dari konsultasi hingga revisi, semuanya berjalan lancar. Website perusahaan kami
+                            sekarang lebih rapi, cepat, dan mudah diakses oleh calon pelanggan."
+                        </p>
+                        <div class="tc-author">
+                            <div class="tc-av" style="background:hsl(150,60%,25%)">F</div>
+                            <div>
+                                <strong>Fajar Nugraha</strong>
+                                <span>Pemilik Usaha Kontraktor</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="testi-nav reveal">
+                <button class="tn-btn" id="testiPrev">←</button>
+                <div class="tn-dots" id="testiDots"></div>
+                <button class="tn-btn" id="testiNext">→</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════ FAQ ═══════════ -->
+
+    <section class="faq-section">
+        <div class="container">
+            <div class="faq-layout">
+                <div class="faq-left">
+                    <div class="section-label reveal">FAQ</div>
+                    <h2 class="section-title reveal">
+                        Pertanyaan yang <em>Sering Diajukan</em>
+                    </h2>
+                    <p class="reveal">
+                        Masih ada pertanyaan? Berikut beberapa hal yang sering ditanyakan oleh calon klien kami.
+                    </p>
+                </div>
+
+                <div class="faq-right">
+
+                    <div class="faq-item reveal" data-delay="0">
+                        <button class="fq-btn">
+                            <span>Berapa lama proses pembuatan website?</span>
+                            <span class="fq-icon">+</span>
+                        </button>
+                        <div class="fq-body">
+                            <p>
+                                Waktu pengerjaan bergantung pada tingkat kompleksitas website.
+                                Landing page biasanya selesai dalam 7 hari, website perusahaan sekitar 14 hari,
+                                sedangkan sistem informasi dapat memerlukan waktu 14–30 hari.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item reveal" data-delay="60">
+                        <button class="fq-btn">
+                            <span>Apakah saya bisa mengajukan revisi?</span>
+                            <span class="fq-icon">+</span>
+                        </button>
+                        <div class="fq-body">
+                            <p>
+                                Tentu. Setiap paket sudah mencakup revisi sesuai ketentuan paket yang dipilih.
+                                Kami akan memastikan website sesuai dengan kebutuhan bisnis Anda.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item reveal" data-delay="120">
+                        <button class="fq-btn">
+                            <span>Apakah website bisa dibuka di HP?</span>
+                            <span class="fq-icon">+</span>
+                        </button>
+                        <div class="fq-body">
+                            <p>
+                                Ya. Semua website yang kami buat sudah responsif dan dapat diakses dengan nyaman
+                                melalui smartphone, tablet, maupun komputer.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item reveal" data-delay="180">
+                        <button class="fq-btn">
+                            <span>Bisnis seperti apa yang bisa menggunakan jasa Astrove?</span>
+                            <span class="fq-icon">+</span>
+                        </button>
+                        <div class="fq-body">
+                            <p>
+                                Kami melayani berbagai jenis bisnis seperti UMKM, coffee shop, restoran,
+                                kontraktor, jasa renovasi, perusahaan lokal, hingga kebutuhan sistem informasi khusus.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item reveal" data-delay="240">
+                        <button class="fq-btn">
+                            <span>Teknologi apa yang digunakan?</span>
+                            <span class="fq-icon">+</span>
+                        </button>
+                        <div class="fq-body">
+                            <p>
+                                Kami menggunakan teknologi modern seperti HTML, CSS, JavaScript, Bootstrap,
+                                Tailwind CSS, PHP Laravel, serta Python Django untuk menghasilkan website yang cepat,
+                                aman, dan mudah dikembangkan.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item reveal" data-delay="300">
+                        <button class="fq-btn">
+                            <span>Bagaimana cara memulai proyek?</span>
+                            <span class="fq-icon">+</span>
+                        </button>
+                        <div class="fq-body">
+                            <p>
+                                Hubungi kami melalui formulir kontak atau WhatsApp.
+                                Tim kami akan mendiskusikan kebutuhan Anda dan memberikan solusi terbaik sesuai budget
+                                yang dimiliki.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- ═══════════ CTA BAND ═══════════ -->
+    <section class="cta-band">
+        <div class="cta-marquee-bg" aria-hidden="true">
+            <div class="ctam">
+                <span>BUILD BEYOND DIGITAL</span><span>✦</span>
+                <span>BUILD BEYOND DIGITAL</span><span>✦</span>
+                <span>BUILD BEYOND DIGITAL</span><span>✦</span>
+                <span>BUILD BEYOND DIGITAL</span><span>✦</span>
+            </div>
+        </div>
+        <div class="cta-content reveal">
+            <h2 class="cta-big">Bangun Website Anda</h2>
+            <p>Tingkatkan kepercayaan pelanggan dan kembangkan bisnis Anda dengan website yang cepat, modern, dan
+                responsif.</p>
+            <div class="cta-actions">
+                <a href="#contact" class="btn-pill">Konsultasi Gratis ↗</a>
+                <a href="#portfolio" class="btn-text-link">Lihat Portofolio <span class="tl-arrow">→</span></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════ CONTACT ═══════════ -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+
+            <div class="contact-simple reveal">
+
+                <div class="section-label">
+                    Hubungi Kami
+                </div>
+
+                <h2 class="section-title">
+                    Mari <em>Berdiskusi</em>
+                </h2>
+
+                <p class="contact-desc">
+                    Punya ide proyek, ingin membuat website, atau butuh sistem khusus untuk bisnis Anda?
+                    Hubungi kami dan dapatkan konsultasi gratis.
+                </p>
+
+                <div class="contact-cards">
+
+                    <a href="https://wa.me/6281234567890" class="contact-card">
+                        <div class="cc-icon">
+                            <i class="fab fa-whatsapp"></i>
+                        </div>
+
+                        <div class="cc-info">
+                            <span class="cc-label">WhatsApp</span>
+                            <h4>Konsultasi Cepat</h4>
+                            <p>Respon lebih cepat untuk diskusi proyek dan penawaran harga.</p>
+                        </div>
+
+                        <span class="cc-arrow">↗</span>
+                    </a>
+
+                    <a href="mailto:hello@astrove.tech" class="contact-card">
+                        <div class="cc-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+
+                        <div class="cc-info">
+                            <span class="cc-label">Email</span>
+                            <h4>hello@astrove.tech</h4>
+                            <p>Kirim kebutuhan proyek Anda secara lengkap.</p>
+                        </div>
+
+                        <span class="cc-arrow">↗</span>
+                    </a>
+
+                    <a href="https://instagram.com/astrove.tech" class="contact-card">
+                        <div class="cc-icon">
+                            <i class="fab fa-instagram"></i>
+                        </div>
+
+                        <div class="cc-info">
+                            <span class="cc-label">Instagram</span>
+                            <h4>@astrove.tech</h4>
+                            <p>Lihat update proyek dan aktivitas terbaru kami.</p>
+                        </div>
+
+                        <span class="cc-arrow">↗</span>
+                    </a>
+
+                </div>
+
+                <div class="contact-cta">
+                    <a href="https://wa.me/6281234567890" class="btn-pill">
+                        Konsultasi Gratis ↗
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ═══════════ FOOTER ═══════════ -->
+
+    <footer class="footer">
+        <div class="container footer-inner">
+
+            <div class="footer-top">
+
+                <div class="ft-brand">
+
+                    <div class="ft-logo">
+                        <img src="assets/Logo_P.png" alt="Astrove Technology Logo">
+                    </div>
+
+                    <p>
+                        Membantu UMKM, bisnis lokal, dan perusahaan berkembang melalui website profesional serta solusi
+                        digital yang modern dan mudah digunakan.
+                    </p>
+
+                    <div class="ft-socials">
+                        <a href="#">IG</a>
+                        <a href="#">WA</a>
+                        <a href="#">EM</a>
+                    </div>
+
+                </div>
+
+                <div class="ft-links">
+
+                    <div class="ftl-col">
+                        <h5>Navigasi</h5>
+                        <a href="#home">Beranda</a>
+                        <a href="#services">Layanan</a>
+                        <a href="#portfolio">Portofolio</a>
+                        <a href="#pricing">Harga</a>
+                        <a href="#about">Tentang Kami</a>
+                    </div>
+
+                    <div class="ftl-col">
+                        <h5>Layanan</h5>
+                        <a href="#services">Landing Page</a>
+                        <a href="#services">Website Perusahaan</a>
+                        <a href="#services">Sistem Kasir (POS)</a>
+                        <a href="#services">Sistem Informasi</a>
+                        <a href="#services">Website Custom</a>
+                    </div>
+
+                    <div class="ftl-col">
+                        <h5>Hubungi Kami</h5>
+                        <a href="https://wa.me/6281234567890">
+                            +62 812-3456-7890
+                        </a>
+                        <a href="mailto:hello@astrove.tech">
+                            hello@astrove.tech
+                        </a>
+                        <a href="#">
+                            Indonesia 🇮🇩
+                        </a>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="footer-bottom">
+                <span>
+                    © 2026 Astrove Technology. Seluruh hak cipta dilindungi.
+                </span>
+
+                <span>
+                    Dibuat oleh Astrove Technology
+                </span>
+            </div>
+
+        </div>
+    </footer>
+    <!-- Floating Social -->
+<div class="contact-fab">
+
+    <div class="contact-menu" id="contactMenu">
+
+        <div class="contact-header">
+            <strong>Astrove Technology</strong>
+            <span>Biasanya membalas dalam 15 menit</span>
+        </div>
+
+        <a href="https://wa.me/6281234567890" target="_blank" class="contact-item">
+            <i class="fab fa-whatsapp"></i>
+            <div>
+                <strong>WhatsApp</strong>
+                <span>Konsultasi gratis</span>
+            </div>
+        </a>
+
+        <a href="https://instagram.com/astrove.tech" target="_blank" class="contact-item">
+            <i class="fab fa-instagram"></i>
+            <div>
+                <strong>Instagram</strong>
+                <span>Lihat portofolio terbaru</span>
+            </div>
+        </a>
+
+        <a href="https://tiktok.com/@astrove.tech" target="_blank" class="contact-item">
+            <i class="fab fa-tiktok"></i>
+            <div>
+                <strong>TikTok</strong>
+                <span>Tips & behind the scene</span>
+            </div>
+        </a>
+
+    </div>
+
+    <button class="contact-trigger" id="contactTrigger">
+        <i class="fas fa-paper-plane"></i>
+    </button>
+
+</div>
+
+
+
+    <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.96/build/spline-viewer.js"></script>
+    <script type="module" src="script.js"></script>
+</body>
+
+</html>
