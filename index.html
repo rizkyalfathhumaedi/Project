@@ -1,16 +1,17 @@
 <!DOCTYPE html>
-<html lang="id" data-theme="dark">
+<html lang="id" data-theme="light">
 
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Astrove Technology — Build Beyond Digital</title>
+    <title>Exelio Code Solution</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link
         href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Instrument+Serif:ital@0;1&family=Cabinet+Grotesk:wght@300;400;500;700;800;900&display=swap"
         rel="stylesheet" />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont/tabler-icons.min.css">
 </head>
 
 <body>
@@ -18,7 +19,7 @@
     <!-- LOADER -->
     <div id="loader">
         <div class="loader-center">
-            <div class="loader-wordmark">ASTROVE</div>
+            <div class="loader-wordmark">EXELIO CODE SOLUTION</div>
             <div class="loader-progress">
                 <div class="loader-bar" id="loaderBar"></div>
             </div>
@@ -41,15 +42,15 @@
     <div class="nav-inner">
 
         <a href="#home" class="nav-logo">
-            <img src="assets/Logo.png" alt="Logo Astrove Technology" class="logo-img">
-            Astrove Technology
+            <img src="assets/Logo.png" alt="Logo Exelio Code Solution" class="logo-img">
+            Exelio Code Solution
         </a>
 
         <ul class="nav-links" id="navLinks">
             <li><a href="#services" class="nl">Layanan</a></li>
+            <li><a href="#about" class="nl">Tentang</a></li>
             <li><a href="#portfolio" class="nl">Portofolio</a></li>
             <li><a href="#pricing" class="nl">Harga</a></li>
-            <li><a href="#about" class="nl">Tentang</a></li>
             <li><a href="#contact" class="nl">Kontak</a></li>
         </ul>
 
@@ -67,98 +68,152 @@
 
     <!-- ═══════════ HERO ═══════════ -->
     <section id="home" class="hero">
-        <!-- Spline 3D Object -->
-        <div class="spline-wrap">
-            <spline-viewer loading-anim-type="none" url="https://prod.spline.design/cc8gJRij0KwpQvnS/scene.splinecode">
-            </spline-viewer>
-        </div>
 
-        <!-- Abstract BG shapes -->
-        <div class="hero-noise"></div>
-        <div class="abstract-ring r1"></div>
-        <div class="abstract-ring r2"></div>
+  <!-- Blob biru navy -->
+  <div class="hero-blob">
+  <svg viewBox="0 0 620 900" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+    <defs>
+      <linearGradient id="blobGrad" x1="10%" y1="0%" x2="90%" y2="100%">
+        <stop offset="0%" stop-color="#0b2258"/>
+        <stop offset="100%" stop-color="#1848a0"/>
+      </linearGradient>
+      <linearGradient id="blobShine" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#163a8a" stop-opacity="0.6"/>
+        <stop offset="100%" stop-color="#2060c0" stop-opacity="0.15"/>
+      </linearGradient>
+      <linearGradient id="blobDeep" x1="0%" y1="100%" x2="100%" y2="0%">
+        <stop offset="0%" stop-color="#0a1e4e" stop-opacity="0.4"/>
+        <stop offset="100%" stop-color="#1a50b0" stop-opacity="0.1"/>
+      </linearGradient>
+    </defs>
 
-        <div class="hero-content">
-            <div class="hero-eyebrow">
-                <span class="eyebrow-line"></span>
-                <span>Astrove Technology · Sejak 2026</span>
-                <span class="eyebrow-line"></span>
-            </div>
-            <h1 class="hero-title">
-                <span class="ht-line" data-text="BUILD">BUILD</span>
-                <span class="ht-line italic-serif" data-text="Beyond">Beyond</span>
-                <span class="ht-line" data-text="DIGITAL">DIGITAL</span>
-            </h1>
-            <p class="hero-desc">
-                Kami menghadirkan website berkualitas tinggi yang dirancang untuk mengubah pengunjung menjadi pelanggan
-                cepat, tepat, dan penuh kreativitas.
-            </p>
-            <p class="hero-subdesc">
-                cepat, tepat, dan penuh kreativitas.
-            </p>
-            <div class="hero-actions">
-                <a href="#contact" class="btn-pill">Konsultasi Gratis ↗</a>
-                <a href="#portfolio" class="btn-text-link">Lihat Portofolio <span class="tl-arrow">→</span></a>
-            </div>
-        </div>
+    <!-- Main blob — tepi kiri bergelombang -->
+    <path d="
+      M 620,0 L 620,900 L 0,900
+      C 40,820 10,740 60,660
+      C 110,580 80,510 120,440
+      C 155,378 100,310 140,245
+      C 175,185 130,115 175,60
+      C 205,20 260,0 320,0 Z
+    " fill="url(#blobGrad)"/>
 
-        <!-- Floating marquee -->
-        <div class="hero-marquee-wrap">
-            <div class="hero-marquee">
-                <span>Landing Page</span><span class="mx-dot">✦</span>
-                <span>Company Profile</span><span class="mx-dot">✦</span>
-                <span>UI/UX Design</span><span class="mx-dot">✦</span>
-                <span>Web Development</span><span class="mx-dot">✦</span>
-                <span>Redesign</span><span class="mx-dot">✦</span>
-                <span>Landing Page</span><span class="mx-dot">✦</span>
-                <span>Company Profile</span><span class="mx-dot">✦</span>
-                <span>UI/UX Design</span><span class="mx-dot">✦</span>
-                <span>Web Development</span><span class="mx-dot">✦</span>
-                <span>Redesign</span><span class="mx-dot">✦</span>
-            </div>
-        </div>
-    </section>
+    <!-- Layer highlight -->
+    <path d="
+      M 620,0 C 540,20 480,0 400,40
+      C 320,80 300,60 250,120
+      C 200,180 230,260 190,330
+      C 150,400 170,470 140,545
+      C 110,620 130,700 100,770
+      C 70,840 30,880 0,900 L 620,900 Z
+    " fill="url(#blobShine)"/>
+
+    <!-- Layer gelap bawah -->
+    <path d="
+      M 620,900 L 0,900
+      C 50,830 80,750 120,680
+      C 160,610 140,540 180,470
+      C 220,400 200,340 250,280
+      C 300,220 280,150 340,100
+      C 380,60 460,30 540,10 L 620,0 Z
+    " fill="url(#blobDeep)"/>
+
+    <!-- Lingkaran dekoratif -->
+    <circle cx="460" cy="160" r="180" fill="rgba(255,255,255,0.025)"/>
+    <circle cx="380" cy="580" r="130" fill="rgba(255,255,255,0.02)"/>
+    <circle cx="520" cy="720" r="90" fill="rgba(255,255,255,0.015)"/>
+  </svg>
+</div>
+
+  <!-- Spline 3D Object -->
+  <div class="spline-wrap">
+        <spline-viewer loading-anim-type="none" url="https://prod.spline.design/cc8gJRij0KwpQvnS/scene.splinecode">
+        </spline-viewer>
+  </div>
+
+  <!-- Abstract rings (di atas blob) -->
+  <div class="hero-noise"></div>
+  <div class="abstract-ring r1"></div>
+  <div class="abstract-ring r2"></div>
+
+  <div class="hero-content">
+    <div class="hero-eyebrow">
+      <span class="eyebrow-line"></span>
+      <span>Exelio Code Solution · Sejak 2026</span>
+      <span class="eyebrow-line"></span>
+    </div>
+    <h1 class="hero-title">
+      <span class="ht-line" data-text="Exelio">Exelio</span>
+      <span class="ht-line italic-serif" data-text="Code">Code</span>
+      <span class="ht-line" data-text="Solution">Solution</span>
+    </h1>
+    <p class="hero-desc">
+      Kami menghadirkan website berkualitas tinggi yang dirancang untuk
+      mengubah pengunjung menjadi pelanggan cepat, tepat, dan penuh kreativitas.
+    </p>
+    <div class="hero-actions">
+      <a href="#contact" class="btn-pill">Konsultasi Gratis ↗</a>
+      <a href="#portfolio" class="btn-text-link">Lihat Portofolio <span class="tl-arrow">→</span></a>
+    </div>
+  </div>
+
+  <!-- Floating marquee -->
+  <div class="hero-marquee-wrap">
+    <div class="hero-marquee">
+      <span>Landing Page</span><span class="mx-dot">✦</span>
+      <span>Company Profile</span><span class="mx-dot">✦</span>
+      <span>UI/UX Design</span><span class="mx-dot">✦</span>
+      <span>Web Development</span><span class="mx-dot">✦</span>
+      <span>Redesign</span><span class="mx-dot">✦</span>
+      <span>Landing Page</span><span class="mx-dot">✦</span>
+      <span>Company Profile</span><span class="mx-dot">✦</span>
+      <span>UI/UX Design</span><span class="mx-dot">✦</span>
+      <span>Web Development</span><span class="mx-dot">✦</span>
+      <span>Redesign</span><span class="mx-dot">✦</span>
+    </div>
+  </div>
+
+</section>
 
     <!-- ═══════════ STATS ═══════════ -->
     <section class="stats-band">
-        <div class="sb-inner">
-
-            <div class="sb-item reveal">
-                <!-- <i class="fas fa-folder-open"></i> -->
-                <div class="sb-num" data-count="5">0</div>
-                <div class="sb-suffix">+</div>
-                <div class="sb-label">Proyek Selesai</div>
-            </div>
-
-            <div class="sb-divider"></div>
-
-            <div class="sb-item reveal">
-                <!-- <i class="fas fa-users"></i> -->
-                <div class="sb-num" data-count="5">0</div>
-                <div class="sb-suffix">+</div>
-                <div class="sb-label">Klien Puas</div>
-            </div>
-
-            <div class="sb-divider"></div>
-
-            <div class="sb-item reveal">
-                <!-- <i class="fas fa-calendar-alt"></i> -->
-                <div class="sb-num" data-count="1">0</div>
-                <div class="sb-suffix">+</div>
-                <div class="sb-label">Tahun Pengalaman</div>
-            </div>
-
-            <div class="sb-divider"></div>
-
-            <div class="sb-item reveal">
-                <!-- <i class="fas fa-bolt"></i> -->
-                <div class="sb-num" data-count="100">0</div>
-                <div class="sb-suffix">%</div>
-                <div class="sb-label">Kepuasan Klien</div>
-            </div>
-
-        </div>
-    </section>
+  <div class="sb-inner">
+    <div class="sb-item reveal">
+      <div class="sb-icon"><i class="ti ti-folder-open"></i></div>
+      <div class="sb-row">
+        <span class="sb-num" data-count="5">0</span>
+        <span class="sb-suffix">+</span>
+      </div>
+      <div class="sb-label">Proyek Selesai</div>
+    </div>
+    <div class="sb-divider"></div>
+    <div class="sb-item reveal">
+      <div class="sb-icon"><i class="ti ti-users"></i></div>
+      <div class="sb-row">
+        <span class="sb-num" data-count="5">0</span>
+        <span class="sb-suffix">+</span>
+      </div>
+      <div class="sb-label">Klien Puas</div>
+    </div>
+    <div class="sb-divider"></div>
+    <div class="sb-item reveal">
+      <div class="sb-icon"><i class="ti ti-calendar"></i></div>
+      <div class="sb-row">
+        <span class="sb-num" data-count="1">0</span>
+        <span class="sb-suffix">+</span>
+      </div>
+      <div class="sb-label">Tahun Pengalaman</div>
+    </div>
+    <div class="sb-divider"></div>
+    <div class="sb-item reveal">
+      <div class="sb-icon"><i class="ti ti-star"></i></div>
+      <div class="sb-row">
+        <span class="sb-num" data-count="100">0</span>
+        <span class="sb-suffix">%</span>
+      </div>
+      <div class="sb-label">Kepuasan Klien</div>
+    </div>
+  </div>
+</section>
 
     <!-- ═══════════ SERVICES ═══════════ -->
     <section id="services" class="services-section">
@@ -270,13 +325,14 @@
                         <div class="about-blob">
                             <div class="blob-inner">
                                 <div class="blob-3d-placeholder">
-                                    <div class="b3d-ring b3d-r1 "></div>
+                                    <div class="b3d-ring b3d-r1"></div>
                                     <div class="b3d-ring b3d-r2"></div>
                                     <div class="b3d-ring b3d-r3"></div>
                                     <div class="b3d-core"></div>
-                                    <img src="assets/Logo_B.png" alt="Astrove Technology Logo" class="about-logo">
                                 </div>
-                            </div>
+                                <!-- pindah ke sini, di luar blob-3d-placeholder -->
+                                <img src="assets/Logo.png" alt="Exelio Code Solution Logo" class="about-logo">
+                                </div>
                         </div>
 
                         <div class="about-badge">Sejak 2026</div>
@@ -286,7 +342,7 @@
                 <div class="about-right">
 
                     <p class="about-big-text reveal">
-                        Astrove Technology adalah studio pengembangan website yang berfokus pada pembuatan
+                        Exelio Code Solution adalah studio pengembangan website yang berfokus pada pembuatan
                         <em>website modern, cepat, dan profesional.</em>
                     </p>
 
@@ -361,7 +417,7 @@
             <div class="portfolio-masonry">
 
                 <div class="pm-card tall reveal" data-cat="landing" data-delay="0">
-                    <div class="pmc-visual pv1">
+                    <!-- <div class="pmc-visual pv1">
                         <div class="pv-inner">
                             <div class="pv-bar"></div>
                             <div class="pv-lines">
@@ -373,6 +429,10 @@
                                 <div class="pvc"></div>
                             </div>
                         </div>
+                    </div> -->
+                    <!-- GANTI JADI INI -->
+                    <div class="pmc-visual">
+                        <img src="assets/imagesProduck/umkm.png" alt="Website UMKM Kuliner">
                     </div>
 
                     <div class="pmc-overlay">
@@ -394,18 +454,22 @@
                             </div>
                         </div>
                     </div>
+                    <!-- GANTI JADI INI -->
+                    <!-- <div class="pmc-visual">
+                        <img src="assets/imagesProduck/astrove-tech.png" alt="Website Exelio Code Solution">
+                    </div> -->
 
 
                     <div class="pmc-overlay">
                         <span class="pmc-cat">Website Perusahaan</span>
-                        <h3>Astrove Technology</h3>
+                        <h3>Exelio Code Solution</h3>
                         <p>Laravel · Bootstrap · MySQL</p>
                         <button class="pmc-btn" data-project="1">Lihat Detail →</button>
                     </div>
                 </div>
 
                 <div class="pm-card reveal" data-cat="system" data-delay="150">
-                    <div class="pmc-visual pv3">
+                    <!-- <div class="pmc-visual pv3">
                         <div class="pv-inner">
                             <div class="pv-bar"></div>
                             <div class="pv-lines">
@@ -413,6 +477,10 @@
                                 <div class="pvl w35"></div>
                             </div>
                         </div>
+                    </div> -->
+                    <!-- GANTI JADI INI -->
+                    <div class="pmc-visual">
+                        <img src="assets/imagesProduck/sistemkasir.png" alt="Sistem Kasir Coffee Shop">
                     </div>
 
                     <div class="pmc-overlay">
@@ -424,7 +492,7 @@
                 </div>
 
                 <div class="pm-card wide reveal" data-cat="landing" data-delay="200">
-                    <div class="pmc-visual pv4">
+                    <!-- <div class="pmc-visual pv4">
                         <div class="pv-inner">
                             <div class="pv-bar"></div>
                             <div class="pv-lines">
@@ -432,6 +500,10 @@
                                 <div class="pvl w40"></div>
                             </div>
                         </div>
+                    </div> -->
+                    <!-- GANTI JADI INI -->
+                    <div class="pmc-visual">
+                        <img src="assets/imagesProduck/jasarenovasi.png" alt="Landing Page Jasa Renovasi">
                     </div>
 
                     <div class="pmc-overlay">
@@ -443,7 +515,7 @@
                 </div>
 
                 <div class="pm-card reveal" data-cat="company" data-delay="250">
-                    <div class="pmc-visual pv5">
+                    <!-- <div class="pmc-visual pv5">
                         <div class="pv-inner">
                             <div class="pv-bar"></div>
                             <div class="pv-lines">
@@ -451,6 +523,10 @@
                                 <div class="pvl w55"></div>
                             </div>
                         </div>
+                    </div> -->
+                    <!-- GANTI JADI INI -->
+                    <div class="pmc-visual">
+                        <img src="assets/imagesProduck/profilekontruksi.png" alt="Website Profil Kontraktor">
                     </div>
 
                     <div class="pmc-overlay">
@@ -462,7 +538,7 @@
                 </div>
 
                 <div class="pm-card reveal" data-cat="system" data-delay="300">
-                    <div class="pmc-visual pv6">
+                    <!-- <div class="pmc-visual pv6">
                         <div class="pv-inner">
                             <div class="pv-bar"></div>
                             <div class="pv-lines">
@@ -470,11 +546,15 @@
                                 <div class="pvl w40"></div>
                             </div>
                         </div>
+                    </div> -->
+                    <!-- GANTI JADI INI -->
+                    <div class="pmc-visual">
+                        <img src="assets/imagesProduck/event.png" alt="Sistem Informasi Event">
                     </div>
 
                     <div class="pmc-overlay">
                         <span class="pmc-cat">Sistem Informasi</span>
-                        <h3>Sistem Reservasi Barbershop</h3>
+                        <h3>Sistem Informasi Event</h3>
                         <p>Django · Python · HTML · CSS</p>
                         <button class="pmc-btn" data-project="5">Lihat Detail →</button>
                     </div>
@@ -493,119 +573,123 @@
     </div>
 
     <!-- ═══════════ PRICING ═══════════ -->
+<section id="pricing" class="pricing-section">
+    <div class="container">
 
-    <section id="pricing" class="pricing-section">
-        <div class="container">
+        <div class="section-label reveal">Paket Harga</div>
 
-            <div class="section-label reveal">Paket Harga</div>
+        <h2 class="section-title reveal">
+            Mulai Website Impian Anda dengan <em>Harga Terjangkau</em>
+        </h2>
 
-            <h2 class="section-title reveal">
-                Mulai Website Impian Anda dengan <em>Harga Terjangkau</em>
-            </h2>
+        <p class="section-desc reveal">
+            Cocok untuk UMKM, bisnis lokal, coffee shop, kontraktor, jasa, dan berbagai usaha yang ingin tampil
+            lebih profesional di internet.
+        </p>
 
-            <p class="section-desc reveal">
-                Cocok untuk UMKM, bisnis lokal, coffee shop, kontraktor, jasa, dan berbagai usaha yang ingin tampil
-                lebih profesional di internet.
-            </p>
+        <div class="pricing-quart">
 
-            <div class="pricing-trio">
-
-                <!-- STARTER -->
-                <div class="pt-card reveal" data-delay="0">
-                    <div class="ptc-top">
-                        <h3>Basic</h3>
-
-                        <div class="ptc-price">
-                            <span class="old-price">Rp 2.500.000</span>
-                            <strong>Rp 1.500.000</strong>
-                        </div>
-
-                        <p>Solusi hemat untuk memulai kehadiran bisnis Anda secara online.</p>
+            <!-- STANDAR -->
+            <div class="pt-card reveal" data-delay="0">
+                <div class="ptc-top">
+                    <h3>Standar</h3>
+                    <div class="ptc-price">
+                        <span class="old-price">Rp 750.000</span>
+                        <strong>Rp 350.000</strong>
+                        <span class="price-range">s/d Rp 500.000</span>
                     </div>
-
-                    <ul>
-                        <li class="on">Landing Page Profesional</li>
-                        <li class="on">Desain Responsif Mobile & Desktop</li>
-                        <li class="on">Informasi Produk / Layanan</li>
-                        <li class="on">Tombol WhatsApp Langsung</li>
-                        <li class="on">Galeri Foto</li>
-                        <li class="on">2x Revisi</li>
-                        <li class="on">Pengerjaan ±7 Hari</li>
-                        <li class="off">Fitur Sistem Informasi</li>
-                    </ul>
-
-                    <a href="#contact" class="ptc-btn">
-                        Pesan Sekarang ↗
-                    </a>
+                    <p>Ideal untuk landing page simpel, cocok untuk UMKM baru.</p>
                 </div>
+                <ul>
+                    <li class="on">Landing Page 1 Halaman</li>
+                    <li class="on">Desain Responsif</li>
+                    <li class="on">Tombol WhatsApp</li>
+                    <li class="on">Galeri Foto</li>
+                    <li class="on">1x Revisi</li>
+                    <li class="on">Pengerjaan ±5 Hari</li>
+                    <li class="off">Formulir Kontak</li>
+                    <li class="off">Sistem Informasi</li>
+                </ul>
+                <a href="#contact" class="ptc-btn">Pesan Sekarang ↗</a>
+            </div>
 
-                <!-- BUSINESS -->
-                <div class="pt-card featured reveal" data-delay="100">
-
-                    <div class="ptc-badge">
-                        PALING DIMINATI
+            <!-- MEDIUM -->
+            <div class="pt-card reveal" data-delay="100">
+                <div class="ptc-top">
+                    <h3>Medium</h3>
+                    <div class="ptc-price">
+                        <span class="old-price">Rp 2.500.000</span>
+                        <strong>Rp 850.000</strong>
+                        <span class="price-range">s/d Rp 1.500.000</span>
                     </div>
-
-                    <div class="ptc-top">
-                        <h3>Business</h3>
-
-                        <div class="ptc-price">
-                            <span class="old-price">Rp 6.000.000</span>
-                            <strong>Rp 4.000.000</strong>
-                        </div>
-
-                        <p>Untuk bisnis yang ingin tampil lebih profesional dan terpercaya.</p>
-                    </div>
-
-                    <ul>
-                        <li class="on">Website Hingga 5 Halaman</li>
-                        <li class="on">Desain Premium & Responsif</li>
-                        <li class="on">Profil Perusahaan Lengkap</li>
-                        <li class="on">Galeri Portofolio</li>
-                        <li class="on">Formulir Kontak</li>
-                        <li class="on">Integrasi WhatsApp</li>
-                        <li class="on">5x Revisi</li>
-                        <li class="on">Pengerjaan ±14 Hari</li>
-                    </ul>
-
-                    <a href="#contact" class="ptc-btn filled">
-                        Pesan Sekarang ↗
-                    </a>
+                    <p>Untuk bisnis yang butuh website multi-halaman dan lebih lengkap.</p>
                 </div>
+                <ul>
+                    <li class="on">Website 3–5 Halaman</li>
+                    <li class="on">Desain Responsif</li>
+                    <li class="on">Profil Perusahaan</li>
+                    <li class="on">Formulir Kontak</li>
+                    <li class="on">Integrasi WhatsApp</li>
+                    <li class="on">3x Revisi</li>
+                    <li class="on">Pengerjaan ±10 Hari</li>
+                    <li class="off">Sistem Informasi</li>
+                </ul>
+                <a href="#contact" class="ptc-btn">Pesan Sekarang ↗</a>
+            </div>
 
-                <!-- PREMIUM -->
-                <div class="pt-card reveal" data-delay="200">
-                    <div class="ptc-top">
-                        <h3>Custom System</h3>
-
-                        <div class="ptc-price">
-                            <span class="old-price">Rp 12.000.000</span>
-                            <strong>Mulai Rp 9.000.000</strong>
-                        </div>
-
-                        <p>Cocok untuk bisnis yang membutuhkan sistem khusus sesuai kebutuhan.</p>
+            <!-- PRO -->
+            <div class="pt-card featured reveal" data-delay="200">
+                <div class="ptc-badge">PALING DIMINATI</div>
+                <div class="ptc-top">
+                    <h3>Pro</h3>
+                    <div class="ptc-price">
+                        <span class="old-price">Rp 4.000.000</span>
+                        <strong>Rp 1.800.000</strong>
+                        <span class="price-range">s/d Rp 2.500.000</span>
                     </div>
-
-                    <ul>
-                        <li class="on">Sistem Kasir (POS)</li>
-                        <li class="on">Sistem Reservasi</li>
-                        <li class="on">Dashboard Admin</li>
-                        <li class="on">Manajemen Data Pelanggan</li>
-                        <li class="on">Laporan & Statistik</li>
-                        <li class="on">Fitur Custom Sesuai Kebutuhan</li>
-                        <li class="on">Pendampingan Implementasi</li>
-                        <li class="on">Prioritas Support</li>
-                    </ul>
-
-                    <a href="#contact" class="ptc-btn">
-                        Pesan Sekarang ↗
-                    </a>
+                    <p>Website profesional lengkap untuk bisnis yang ingin tampil terpercaya.</p>
                 </div>
+                <ul>
+                    <li class="on">Website Hingga 8 Halaman</li>
+                    <li class="on">Desain Premium & Responsif</li>
+                    <li class="on">Galeri Portofolio</li>
+                    <li class="on">Formulir Kontak</li>
+                    <li class="on">Integrasi WhatsApp</li>
+                    <li class="on">5x Revisi</li>
+                    <li class="on">Pengerjaan ±14 Hari</li>
+                    <li class="off">Custom Sistem</li>
+                </ul>
+                <a href="#contact" class="ptc-btn filled">Pesan Sekarang ↗</a>
+            </div>
 
+            <!-- ULTIMATE -->
+            <div class="pt-card reveal" data-delay="300">
+                <div class="ptc-top">
+                    <h3>Ultimate</h3>
+                    <div class="ptc-price">
+                        <span class="old-price">Rp 15.000.000</span>
+                        <strong>Mulai Rp 5.000.000</strong>
+                        <span class="price-range">s/d Rp 10.000.000</span>
+                    </div>
+                    <p>Sistem custom penuh sesuai kebutuhan, dari POS hingga dashboard.</p>
+                </div>
+                <ul>
+                    <li class="on">Sistem Kasir (POS)</li>
+                    <li class="on">Sistem Reservasi</li>
+                    <li class="on">Dashboard Admin</li>
+                    <li class="on">Manajemen Pelanggan</li>
+                    <li class="on">Laporan & Statistik</li>
+                    <li class="on">Fitur Custom</li>
+                    <li class="on">Pendampingan Implementasi</li>
+                    <li class="on">Prioritas Support</li>
+                </ul>
+                <a href="#contact" class="ptc-btn">Pesan Sekarang ↗</a>
             </div>
 
         </div>
-    </section>
+
+    </div>
+</section>
 
     <!-- ═══════════ TESTIMONIALS ═══════════ -->
     <section class="testi-section">
@@ -622,9 +706,9 @@
                             WhatsApp."
                         </p>
                         <div class="tc-author">
-                            <div class="tc-av" style="background:hsl(180,60%,25%)">R</div>
+                            <div class="tc-av" style="background:hsl(180,60%,25%)">E</div>
                             <div>
-                                <strong>Rizky Pratama</strong>
+                                <strong>Endah</strong>
                                 <span>Pemilik UMKM Kuliner</span>
                             </div>
                         </div>
@@ -633,14 +717,14 @@
                     <div class="tc">
                         <div class="tc-stars">★★★★★</div>
                         <p>
-                            "Tim Astrove sangat komunikatif selama proses pengerjaan. Website company profile yang
+                            "Tim Exelio sangat komunikatif selama proses pengerjaan. Website company profile yang
                             dibuat membantu bisnis kami terlihat lebih profesional di mata calon klien."
                         </p>
                         <div class="tc-author">
-                            <div class="tc-av" style="background:hsl(220,60%,25%)">S</div>
+                            <div class="tc-av" style="background:hsl(220,60%,25%)">R</div>
                             <div>
-                                <strong>Siti Rahma</strong>
-                                <span>Direktur CV Maju Bersama</span>
+                                <strong>Rizky</strong>
+                                <span>Pemilik Exelio Code Solution</span>
                             </div>
                         </div>
                     </div>
@@ -652,9 +736,9 @@
                             jadi lebih cepat dan laporan penjualan bisa dipantau dengan mudah."
                         </p>
                         <div class="tc-author">
-                            <div class="tc-av" style="background:hsl(30,60%,25%)">A</div>
+                            <div class="tc-av" style="background:hsl(30,60%,25%)">S</div>
                             <div>
-                                <strong>Andi Saputra</strong>
+                                <strong>Saputra</strong>
                                 <span>Pemilik Coffee Shop</span>
                             </div>
                         </div>
@@ -667,9 +751,9 @@
                             berhasil meningkatkan jumlah calon pelanggan yang menghubungi kami."
                         </p>
                         <div class="tc-author">
-                            <div class="tc-av" style="background:hsl(270,60%,25%)">D</div>
+                            <div class="tc-av" style="background:hsl(270,60%,25%)">B</div>
                             <div>
-                                <strong>Dewi Lestari</strong>
+                                <strong>Bintang Lestari</strong>
                                 <span>Pemilik Jasa Renovasi</span>
                             </div>
                         </div>
@@ -826,175 +910,192 @@
     </section>
 
     <!-- ═══════════ CONTACT ═══════════ -->
-    <section id="contact" class="contact-section">
-        <div class="container">
+<section id="contact" class="contact-section">
+    <div class="container">
 
-            <div class="contact-simple reveal">
+        <div class="contact-simple reveal">
 
-                <div class="section-label">
-                    Hubungi Kami
+            <div class="section-label">Hubungi Kami</div>
+
+            <h2 class="section-title">
+                Mari <em>Berdiskusi</em>
+            </h2>
+
+            <p class="contact-desc">
+                Punya ide proyek, ingin membuat website, atau butuh sistem khusus untuk bisnis Anda?
+                Hubungi kami dan dapatkan konsultasi gratis.
+            </p>
+
+            <div class="contact-cards">
+
+                <!-- WHATSAPP -->
+                <div class="contact-card">
+                    <div class="cc-icon">
+                        <i class="fab fa-whatsapp"></i>
+                    </div>
+                    <div class="cc-info">
+                        <span class="cc-label">WhatsApp</span>
+                        <h4>Konsultasi Cepat</h4>
+                        <p>Respon lebih cepat untuk diskusi proyek dan penawaran harga.</p>
+                        <div class="cc-wa-btns">
+                            <a href="https://wa.me/6282115700877" class="cc-wa-btn">
+                                <i class="fab fa-whatsapp"></i> Admin 1
+                            </a>
+                            <a href="https://wa.me/6285624901966" class="cc-wa-btn">
+                                <i class="fab fa-whatsapp"></i> Admin 2
+                            </a>
+                        </div>
+                    </div>
+                    <span class="cc-arrow">↗</span>
                 </div>
 
-                <h2 class="section-title">
-                    Mari <em>Berdiskusi</em>
-                </h2>
+                <!-- EMAIL -->
+                <a href="mailto:exeliocodesolution@gmail.com" class="contact-card">
+                    <div class="cc-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="cc-info">
+                        <span class="cc-label">Email</span>
+                        <h4>exeliocodesolution@gmail.com</h4>
+                        <p>Kirim kebutuhan proyek Anda secara lengkap.</p>
+                    </div>
+                    <span class="cc-arrow">↗</span>
+                </a>
 
-                <p class="contact-desc">
-                    Punya ide proyek, ingin membuat website, atau butuh sistem khusus untuk bisnis Anda?
-                    Hubungi kami dan dapatkan konsultasi gratis.
-                </p>
-
-                <div class="contact-cards">
-
-                    <a href="https://wa.me/6281234567890" class="contact-card">
-                        <div class="cc-icon">
-                            <i class="fab fa-whatsapp"></i>
+                <!-- MEDIA SOSIAL -->
+                <div class="contact-card">
+                    <div class="cc-icon">
+                        <i class="fas fa-share-alt"></i>
+                    </div>
+                    <div class="cc-info">
+                        <span class="cc-label">Media Sosial</span>
+                        <h4>@exelio.code.solution</h4>
+                        <p>Lihat update proyek dan aktivitas terbaru kami.</p>
+                        <div class="cc-wa-btns">
+                            <a href="https://instagram.com/exelio.code.solution" class="cc-wa-btn">
+                                <i class="fab fa-instagram"></i> Instagram
+                            </a>
+                            <a href="https://tiktok.com/@exelio.code.solution" class="cc-wa-btn">
+                                <i class="fab fa-tiktok"></i> TikTok
+                            </a>
                         </div>
-
-                        <div class="cc-info">
-                            <span class="cc-label">WhatsApp</span>
-                            <h4>Konsultasi Cepat</h4>
-                            <p>Respon lebih cepat untuk diskusi proyek dan penawaran harga.</p>
-                        </div>
-
-                        <span class="cc-arrow">↗</span>
-                    </a>
-
-                    <a href="mailto:hello@astrove.tech" class="contact-card">
-                        <div class="cc-icon">
-                            <i class="fas fa-envelope"></i>
-                        </div>
-
-                        <div class="cc-info">
-                            <span class="cc-label">Email</span>
-                            <h4>hello@astrove.tech</h4>
-                            <p>Kirim kebutuhan proyek Anda secara lengkap.</p>
-                        </div>
-
-                        <span class="cc-arrow">↗</span>
-                    </a>
-
-                    <a href="https://instagram.com/astrove.tech" class="contact-card">
-                        <div class="cc-icon">
-                            <i class="fab fa-instagram"></i>
-                        </div>
-
-                        <div class="cc-info">
-                            <span class="cc-label">Instagram</span>
-                            <h4>@astrove.tech</h4>
-                            <p>Lihat update proyek dan aktivitas terbaru kami.</p>
-                        </div>
-
-                        <span class="cc-arrow">↗</span>
-                    </a>
-
-                </div>
-
-                <div class="contact-cta">
-                    <a href="https://wa.me/6281234567890" class="btn-pill">
-                        Konsultasi Gratis ↗
-                    </a>
+                    </div>
+                    <span class="cc-arrow">↗</span>
                 </div>
 
             </div>
 
+            <div class="contact-cta">
+                <a href="https://wa.me/6282115700877" class="btn-pill">
+                    Konsultasi Gratis ↗
+                </a>
+            </div>
+
         </div>
-    </section>
+
+    </div>
+</section>
 
     <!-- ═══════════ FOOTER ═══════════ -->
+<footer class="footer">
+    <div class="container footer-inner">
 
-    <footer class="footer">
-        <div class="container footer-inner">
+        <div class="footer-top">
 
-            <div class="footer-top">
-
-                <div class="ft-brand">
-
-                    <div class="ft-logo">
-                        <img src="assets/Logo_P.png" alt="Astrove Technology Logo">
-                    </div>
-
-                    <p>
-                        Membantu UMKM, bisnis lokal, dan perusahaan berkembang melalui website profesional serta solusi
-                        digital yang modern dan mudah digunakan.
-                    </p>
-
-                    <div class="ft-socials">
-                        <a href="#">IG</a>
-                        <a href="#">WA</a>
-                        <a href="#">EM</a>
-                    </div>
-
+            <div class="ft-brand">
+                <div class="ft-logo">
+                    <img src="assets/Logo_P.png" alt="Exelio Code Solution Logo">
                 </div>
-
-                <div class="ft-links">
-
-                    <div class="ftl-col">
-                        <h5>Navigasi</h5>
-                        <a href="#home">Beranda</a>
-                        <a href="#services">Layanan</a>
-                        <a href="#portfolio">Portofolio</a>
-                        <a href="#pricing">Harga</a>
-                        <a href="#about">Tentang Kami</a>
-                    </div>
-
-                    <div class="ftl-col">
-                        <h5>Layanan</h5>
-                        <a href="#services">Landing Page</a>
-                        <a href="#services">Website Perusahaan</a>
-                        <a href="#services">Sistem Kasir (POS)</a>
-                        <a href="#services">Sistem Informasi</a>
-                        <a href="#services">Website Custom</a>
-                    </div>
-
-                    <div class="ftl-col">
-                        <h5>Hubungi Kami</h5>
-                        <a href="https://wa.me/6281234567890">
-                            +62 812-3456-7890
-                        </a>
-                        <a href="mailto:hello@astrove.tech">
-                            hello@astrove.tech
-                        </a>
-                        <a href="#">
-                            Indonesia 🇮🇩
-                        </a>
-                    </div>
-
+                <p>
+                    Membantu UMKM, bisnis lokal, dan perusahaan berkembang melalui website profesional serta solusi
+                    digital yang modern dan mudah digunakan.
+                </p>
+                <div class="ft-socials">
+                    <a href="https://instagram.com/exelio.code.solution" target="_blank" title="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://wa.me/6282115700877" target="_blank" title="WhatsApp">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                    <a href="mailto:exeliocodesolution@gmail.com" title="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                    <a href="https://tiktok.com/@exelio.code.solution" target="_blank" title="TikTok">
+                        <i class="fab fa-tiktok"></i>
+                    </a>
                 </div>
-
             </div>
 
-            <div class="footer-bottom">
-                <span>
-                    © 2026 Astrove Technology. Seluruh hak cipta dilindungi.
-                </span>
+            <div class="ft-links">
 
-                <span>
-                    Dibuat oleh Astrove Technology
-                </span>
+                <div class="ftl-col">
+                    <h5>Navigasi</h5>
+                    <a href="#home">Beranda</a>
+                    <a href="#services">Layanan</a>
+                    <a href="#portfolio">Portofolio</a>
+                    <a href="#pricing">Harga</a>
+                    <a href="#about">Tentang Kami</a>
+                </div>
+
+                <div class="ftl-col">
+                    <h5>Layanan</h5>
+                    <a href="#services">Landing Page</a>
+                    <a href="#services">Website Perusahaan</a>
+                    <a href="#services">Sistem Kasir (POS)</a>
+                    <a href="#services">Sistem Informasi</a>
+                    <a href="#services">Website Custom</a>
+                </div>
+
+                <div class="ftl-col">
+                    <h5>Hubungi Kami</h5>
+                    <!-- <a href="https://wa.me/6282115700877" target="_blank">+62 821-1570-0877</a>
+                    <a href="https://wa.me/6285624901966" target="_blank">+62 856-2490-1966</a> -->
+                    <a href="https://wa.me/6282115700877" target="_blank">WhatsApp Admin 1</a>
+                    <a href="https://wa.me/6285624901966" target="_blank">WhatsApp Admin 2</a>
+                    <a href="https://instagram.com/exelio.code.solution" target="_blank">Instagram</a>
+                    <a href="https://tiktok.com/@exelio.code.solution" target="_blank">TikTok</a>
+                    <a href="mailto:exeliocodesolution@gmail.com">exeliocodesolution@gmail.com</a>
+                    <a href="#">Indonesia 🇮🇩</a>
+                </div>
+
             </div>
 
         </div>
-    </footer>
+
+        <div class="footer-bottom">
+            <span>© 2026 Exelio Code Solution. Seluruh hak cipta dilindungi.</span>
+            <span>Dibuat oleh Exelio Code Solution</span>
+        </div>
+
+    </div>
+</footer>
     <!-- Floating Social -->
 <div class="contact-fab">
 
     <div class="contact-menu" id="contactMenu">
 
         <div class="contact-header">
-            <strong>Astrove Technology</strong>
+            <strong>Exelio Code Solution</strong>
             <span>Biasanya membalas dalam 15 menit</span>
         </div>
 
-        <a href="https://wa.me/6281234567890" target="_blank" class="contact-item">
+        <a href="https://wa.me/6282115700877" target="_blank" class="contact-item">
             <i class="fab fa-whatsapp"></i>
             <div>
-                <strong>WhatsApp</strong>
+                <strong>WhatsApp Admin 1</strong>
                 <span>Konsultasi gratis</span>
             </div>
         </a>
 
-        <a href="https://instagram.com/astrove.tech" target="_blank" class="contact-item">
+        <a href="https://wa.me/6285624901966" target="_blank" class="contact-item">
+            <i class="fab fa-whatsapp"></i>
+            <div>
+                <strong>WhatsApp Admin 2</strong>
+                <span>Konsultasi gratis</span>
+            </div>
+        </a>
+
+        <a href="https://instagram.com/exelio.code.solution" target="_blank" class="contact-item">
             <i class="fab fa-instagram"></i>
             <div>
                 <strong>Instagram</strong>
@@ -1002,7 +1103,7 @@
             </div>
         </a>
 
-        <a href="https://tiktok.com/@astrove.tech" target="_blank" class="contact-item">
+        <a href="https://tiktok.com/@exelio.code.solution" target="_blank" class="contact-item">
             <i class="fab fa-tiktok"></i>
             <div>
                 <strong>TikTok</strong>
@@ -1016,6 +1117,7 @@
         <i class="fas fa-paper-plane"></i>
     </button>
 
+</div>
 </div>
 
 

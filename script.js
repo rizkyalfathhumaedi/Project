@@ -1,6 +1,5 @@
 /* ============================================================
-   ASTROVE TECHNOLOGY — JS v2
-   Custom Cursor · Loader · Theme · Scroll · Testi · FAQ · etc.
+   ASTROVE TECHNOLOGY — JS v2 (Light Mode Only)
 ============================================================ */
 
 /* ── LOADER ── */
@@ -24,7 +23,6 @@
     setTimeout(() => {
       loader.classList.add('out');
       document.body.style.overflow = '';
-      // Trigger hero reveal
       document.querySelectorAll('.hero .reveal').forEach((el, i) => {
         setTimeout(() => el.classList.add('in'), i * 80);
       });
@@ -59,24 +57,6 @@ if (cursor && cursorDot) {
     el.addEventListener('mouseleave', () => document.body.classList.remove('cursor-hover'));
   });
 }
-
-/* ── THEME TOGGLE ── */
-const themeToggle = document.getElementById('themeToggle');
-const html = document.documentElement;
-
-function setTheme(theme) {
-  html.setAttribute('data-theme', theme);
-  localStorage.setItem('astrove-theme', theme);
-}
-
-// Init from storage
-const savedTheme = localStorage.getItem('astrove-theme') || 'dark';
-setTheme(savedTheme);
-
-themeToggle?.addEventListener('click', () => {
-  const current = html.getAttribute('data-theme');
-  setTheme(current === 'dark' ? 'light' : 'dark');
-});
 
 /* ── NAVBAR ── */
 const navbar = document.getElementById('navbar');
@@ -114,7 +94,6 @@ const revealObs = new IntersectionObserver((entries) => {
 }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
 
 document.querySelectorAll('.reveal').forEach(el => {
-  // Skip hero reveals (handled by loader)
   if (!el.closest('.hero')) revealObs.observe(el);
 });
 
@@ -149,7 +128,6 @@ pfBtns.forEach(btn => {
     pfBtns.forEach(b => b.classList.remove('active'));
     btn.classList.add('active');
     const filter = btn.dataset.filter;
-
     pmCards.forEach(card => {
       const match = filter === 'all' || card.dataset.cat === filter;
       if (match) {
@@ -179,39 +157,34 @@ const projects = [
     desc: 'Landing page modern untuk bisnis kuliner lokal dengan katalog menu, galeri produk, informasi lokasi, dan integrasi WhatsApp untuk meningkatkan pemesanan pelanggan.',
     stack: ['HTML', 'CSS', 'JavaScript', 'Bootstrap']
   },
-
   {
-    title: 'Astrove Technology',
+    title: 'Exelio Code Solution',
     tag: 'Website Perusahaan',
     desc: 'Website company profile profesional untuk menampilkan layanan, portofolio, profil perusahaan, dan informasi kontak dalam tampilan yang modern dan responsif.',
     stack: ['Laravel', 'PHP', 'Bootstrap', 'MySQL']
   },
-
   {
     title: 'Sistem Kasir Coffee Shop',
     tag: 'Sistem Informasi',
     desc: 'Aplikasi kasir berbasis web untuk mengelola pesanan, transaksi, produk, dan laporan penjualan harian sehingga operasional coffee shop menjadi lebih efisien.',
     stack: ['Laravel', 'PHP', 'Bootstrap', 'MySQL']
   },
-
   {
     title: 'Landing Page Jasa Renovasi',
     tag: 'Landing Page',
     desc: 'Website promosi untuk usaha renovasi rumah dengan galeri proyek, daftar layanan, testimoni pelanggan, dan formulir konsultasi online.',
     stack: ['Tailwind CSS', 'JavaScript', 'HTML', 'CSS']
   },
-
   {
     title: 'Website Profil Kontraktor',
     tag: 'Website Perusahaan',
     desc: 'Website company profile untuk perusahaan konstruksi yang menampilkan layanan, pengalaman proyek, galeri pekerjaan, dan informasi kontak.',
     stack: ['Laravel', 'Bootstrap', 'PHP', 'MySQL']
   },
-
   {
-    title: 'Sistem Reservasi Barbershop',
+    title: 'Sistem Informasi Event',
     tag: 'Sistem Informasi',
-    desc: 'Platform reservasi online yang memungkinkan pelanggan memilih jadwal, layanan, dan barber favorit, lengkap dengan dashboard pengelolaan booking.',
+    desc: 'Platform manajemen event berbasis web untuk mengelola jadwal acara, pendaftaran peserta, dan informasi kegiatan secara terpusat dan efisien.',
     stack: ['Django', 'Python', 'HTML', 'CSS']
   }
 ];
@@ -291,7 +264,6 @@ if (testiScroll) {
   testiScroll.addEventListener('mouseenter', stopAuto);
   testiScroll.addEventListener('mouseleave', startAuto);
 
-  // Touch swipe
   let touchStartX = 0;
   testiScroll.addEventListener('touchstart', e => { touchStartX = e.touches[0].clientX; }, { passive: true });
   testiScroll.addEventListener('touchend', e => {
@@ -318,27 +290,6 @@ document.querySelectorAll('.faq-item').forEach(item => {
   });
 });
 
-/* ── CONTACT FORM ── */
-document.getElementById('contactForm')?.addEventListener('submit', (e) => {
-  e.preventDefault();
-  const btn = e.target.querySelector('button[type=submit]');
-  const orig = btn.innerHTML;
-  btn.innerHTML = 'Sending...';
-  btn.disabled = true;
-  setTimeout(() => {
-    btn.innerHTML = 'Sent! ✓';
-    btn.style.background = '#16a34a';
-    btn.style.borderColor = '#16a34a';
-    setTimeout(() => {
-      btn.innerHTML = orig;
-      btn.style.background = '';
-      btn.style.borderColor = '';
-      btn.disabled = false;
-      e.target.reset();
-    }, 3000);
-  }, 1500);
-});
-
 /* ── SMOOTH SCROLL ── */
 document.querySelectorAll('a[href^="#"]').forEach(link => {
   link.addEventListener('click', (e) => {
@@ -356,11 +307,10 @@ class Scramble {
     this.el = el;
     this.chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ!@#$%^&*';
     this.original = el.dataset.text || el.textContent;
-    this.frame = 0;
     this.frameReq = null;
   }
   run() {
-    clearAnimationFrame: if (this.frameReq) cancelAnimationFrame(this.frameReq);
+    if (this.frameReq) cancelAnimationFrame(this.frameReq);
     let iteration = 0;
     const original = this.original;
     const el = this.el;
@@ -381,7 +331,6 @@ class Scramble {
   }
 }
 
-// Run scramble on hero title lines
 window.addEventListener('load', () => {
   setTimeout(() => {
     document.querySelectorAll('.ht-line').forEach((el, i) => {
@@ -403,9 +352,25 @@ window.addEventListener('mousemove', (e) => {
   if (r2) r2.style.transform = `translateY(calc(-50% + ${y * 0.7}px)) rotate(${-x}deg)`;
 }, { passive: true });
 
+/* ── CONTACT FAB ── */
 const trigger = document.getElementById("contactTrigger");
 const menu = document.getElementById("contactMenu");
 
 trigger.addEventListener("click", () => {
-    menu.classList.toggle("active");
+  menu.classList.toggle("active");
 });
+
+/* ── NAV ACTIVE ON SCROLL ── */
+const sections = document.querySelectorAll('section[id]');
+const navItems = document.querySelectorAll('.nl');
+
+window.addEventListener('scroll', () => {
+  let current = '';
+  sections.forEach(sec => {
+    if (window.scrollY >= sec.offsetTop - 120) current = sec.getAttribute('id');
+  });
+  navItems.forEach(link => {
+    link.classList.remove('active');
+    if (link.getAttribute('href') === '#' + current) link.classList.add('active');
+  });
+}, { passive: true });
