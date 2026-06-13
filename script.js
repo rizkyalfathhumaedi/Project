@@ -69,10 +69,9 @@ const hamburger = document.getElementById('hamburger');
 const navLinks = document.getElementById('navLinks');
 
 hamburger?.addEventListener('click', () => {
-  const isOpen = navLinks.classList.contains('open');
   hamburger.classList.toggle('open');
   navLinks.classList.toggle('open');
-  document.body.style.overflow = isOpen ? '' : 'hidden';
+  document.body.style.overflow = navLinks.classList.contains('open') ? 'hidden' : '';
 });
 
 navLinks?.querySelectorAll('a').forEach(link => {
@@ -81,19 +80,6 @@ navLinks?.querySelectorAll('a').forEach(link => {
     navLinks.classList.remove('open');
     document.body.style.overflow = '';
   });
-});
-
-/* Tutup menu kalau klik di luar */
-document.addEventListener('click', (e) => {
-  if (
-    navLinks?.classList.contains('open') &&
-    !navLinks.contains(e.target) &&
-    !hamburger.contains(e.target)
-  ) {
-    hamburger.classList.remove('open');
-    navLinks.classList.remove('open');
-    document.body.style.overflow = '';
-  }
 });
 
 /* ── SCROLL REVEAL ── */
