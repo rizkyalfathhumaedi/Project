@@ -64,22 +64,85 @@ window.addEventListener('scroll', () => {
   navbar.classList.toggle('scrolled', window.scrollY > 60);
 }, { passive: true });
 
-/* ── HAMBURGER ── */
-const hamburger = document.getElementById('hamburger');
-const navLinks = document.getElementById('navLinks');
+/* ══════════════════════════════════════════════════════
+   NAVBAR BOTTOM SHEET — JS FINAL
+   
+   Di script.js, HAPUS seluruh blok lama:
+     /* ── HAMBURGER ── * /  (sampai baris .hamburger.open span:nth-child...)
+   
+   GANTI dengan kode di bawah ini.
+══════════════════════════════════════════════════════ */
 
-hamburger?.addEventListener('click', () => {
-  hamburger.classList.toggle('open');
-  navLinks.classList.toggle('open');
-  document.body.style.overflow = navLinks.classList.contains('open') ? 'hidden' : '';
+/* ── HAMBURGER / BOTTOM SHEET ── */
+const hamburger = document.getElementById('hamburger');
+const navLinks  = document.getElementById('navLinks');
+
+/* Inject label "NAVIGASI" ke dalam sheet (sekali saja) */
+if (!navLinks.querySelector('.nav-sheet-label')) {
+  const label = document.createElement('span');
+  label.className = 'nav-sheet-label';
+  // label.textContent = 'NAVIGASI';
+  navLinks.insertAdjacentElement('afterbegin', label);
+}
+
+/* Buat backdrop */
+let backdrop = document.querySelector('.nav-backdrop');
+if (!backdrop) {
+  backdrop = document.createElement('div');
+  backdrop.className = 'nav-backdrop';
+  document.body.appendChild(backdrop);
+}
+
+/* Pindahkan navLinks keluar dari nav-inner ke body */
+if (window.innerWidth <= 900) {
+  document.body.appendChild(navLinks);
+}
+
+window.addEventListener('resize', () => {
+  if (window.innerWidth <= 900) {
+    document.body.appendChild(navLinks);
+  }
 });
 
+function openSheet() {
+  hamburger.classList.add('open');
+  navLinks.classList.add('open');
+  backdrop.style.display = 'block';
+  requestAnimationFrame(() => backdrop.classList.add('visible'));
+  document.body.style.overflow = 'hidden';
+}
+
+function closeSheet() {
+  hamburger.classList.remove('open');
+  navLinks.classList.remove('open');
+  backdrop.classList.remove('visible');
+  document.body.style.overflow = '';
+  setTimeout(() => { backdrop.style.display = 'none'; }, 380);
+}
+
+hamburger?.addEventListener('click', () => {
+  navLinks.classList.contains('open') ? closeSheet() : openSheet();
+});
+
+backdrop.addEventListener('click', closeSheet);
+
 navLinks?.querySelectorAll('a').forEach(link => {
-  link.addEventListener('click', () => {
-    hamburger.classList.remove('open');
-    navLinks.classList.remove('open');
-    document.body.style.overflow = '';
-  });
+  link.addEventListener('click', closeSheet);
+});
+
+document.addEventListener('keydown', e => {
+  if (e.key === 'Escape' && navLinks?.classList.contains('open')) closeSheet();
+});
+
+/* Swipe down to close */
+let sheetTouchY = 0;
+navLinks?.addEventListener('touchstart', e => {
+  sheetTouchY = e.touches[0].clientY;
+}, { passive: true });
+
+navLinks?.addEventListener('touchend', e => {
+  const diff = e.changedTouches[0].clientY - sheetTouchY;
+  if (diff > 60) closeSheet();
 });
 
 /* ── SCROLL REVEAL ── */
